@@ -1,0 +1,393 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  box-sizing:border-box;
+  scroll-behavior:smooth;/*transition between sections would be smooth*/
+  list-style: none;
+  font-family:'poppins';
+}
+/*root is a pseudo class selector that targets the highest level element in t he dom which is html element in a html document */
+:root{
+  --background: rgb(0, 0, 0);
+  --second-background:rgb(48, 47, 47);
+}
+
+body{
+  min-height:100vh;
+  background-color:var(--background);/*setting the background color to the background variable*/
+}
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;/*cover the entire width*/
+  padding:2em 15%;/*The browser considers html tag as parent which is root element and it has default value 16px of font-size*/
+  background-color: rgba(32, 25, 13,0.5);
+display:flex;
+align-items:center;
+justify-content:space-between;
+backdrop-filter:blur(10px);
+z-index:1000;/*so that it stays up*/
+}
+ul{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  gap:3em;
+
+}
+nav ul a{
+  color:white;
+  opacity:0.7;
+}
+
+nav ul a:hover{
+  opacity:1;
+
+}
+.logo{
+  font-size:2em;
+    color:white;
+  font-weight:800;
+  opacity:0.8;
+  transition: all 0.3s ease-in-out;
+  
+}
+.logo:hover{
+  opacity:1;
+}
+.btn{
+padding:0.5em 1em;
+color:white;
+font-weight: 500;
+letter-spacing: 1px;
+border-radius:0.5em;
+font-size: 1.1em;
+border:2px solid white;
+cursor:pointer;
+transition:all 0.3s ease-in-out;
+}
+.btn:hover{
+  background-color: aliceblue;
+  color:var(--background);
+}
+span{
+  background: linear-gradient(to right,#6cff52 ,rgb(249, 255, 168));
+  background-clip:text;
+  color:transparent;
+  /*to be able to put this gradince into text we use backgrund clip and make text transparent,now we can the gradient through text*/
+}
+#menu{
+  color:white;
+  font-size:3em;
+  display:none;
+}
+p{
+  color:white;
+}
+section{
+  min-height:100vh;
+  padding:5% 15%;
+}
+#home{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  color:white;
+  gap:2em;
+  justify-content: center;
+}
+#home img{
+  width:18vw;
+  border-radius;50%;
+  margin-top:3em;
+}
+.infobox{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+ justify-content:space-evenly;
+  gap:0.5em;
+  max-width:600px;
+}
+
+.infobox h1{
+  font-size:5em;
+  font-weight:500px;
+}
+.infobox h3{
+  font-size:2em;
+  font-weight:600px;
+}
+.infobox p{
+  opacity:0.7;
+  transition:all 0.2s ease-in;
+  font-weight: 500;
+}
+.infobox p:hover{
+  opacity:1;
+}
+.btn-box{
+  display:flex;
+  flex-direction:row;
+  gap:2em;
+
+}
+.btn-box .btn:nth-of-type(2){
+background-color:white;
+color:var(--background);
+}
+.btn-box .btn:nth-of-type(2):hover{
+background-color:var(--background);
+color:white;
+}
+
+::-webkit-scrollbar{
+  width:17px;
+
+}
+
+::-webkit-scrollbar-track{
+background-color:var(--background);
+border-radius:20px;
+margin-block:2em;
+}
+::-webkit-scrollbar-track:hover{
+background-color: rgb(80, 82, 81);
+
+}
+::-webkit-scrollbar-thumb{
+background:linear-gradient(to top,#6cff52 ,rgb(249, 255, 168));
+  border-radius:20px;
+  box-shadow:0 0 25px rgb(54,249,55);
+  transition:all 0.2s ease-in;
+
+}
+::-webkit-scrollbar-thumb:hover{   background:linear-gradient(to top,#ffa570 ,rgb(250, 255, 176));
+
+}
+::-webkit-scrollbar-thumb:active{   background:linear-gradient(to top,#ee5237 ,rgb(231, 181, 152));
+}
+
+
+#about{background-color: var(--second-background);
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  gap:5em;
+}
+#about .img{
+  width:30vw;
+  border-radius:1em;
+}
+.about-box{
+  display:flex;
+  flex-direction: column;
+  text-align:left;
+  gap:2em;
+}
+.about-box h1{
+  font-size:5em;
+}
+.about-box p{
+  color:white;
+  opacity: 0.8;
+  transition: all 0.1s;
+}
+.about-box p:hover{
+  color:white;
+  opacity: 1;
+}
+.skills{
+  display:flex;
+  text-align: left;
+  gap:10em;
+}
+.skills ul{
+  font-size:1.3em;
+  font-weight:500;
+  display:flex;
+  flex-direction: column;
+  color:white;
+  opacity:0.8;
+  align-items: baseline;
+  transition: all 0.2s;
+}
+.skills ul:hover{
+  opacity:1;
+}
+.about-box h2{
+  font-size:2.5em;
+}
+.about-box span:hover{
+color:rgb(224, 233, 226);
+font-weight:800;
+font-size:1em;;
+}
+th{
+  padding: 12px; border: 1px solid #ccc;
+}
+td{
+  padding: 12px; 
+  border: 1px solid #ccc;
+  color:white
+}
+.btn1{
+padding:0.5em 1em;
+color:rgb(41, 40, 40);
+font-weight: 500;
+letter-spacing: 1px;
+border-radius:0.5em;
+font-size: 1.1em;
+border:2px solid rgb(98, 167, 89);
+cursor:pointer;
+transition:all 0.2ss ease-in;
+}
+.btn1:hover{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  
+}
+#contact{
+  background-color: var(--second-background);
+
+}
+form{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2em;
+}
+form .input-box{
+display:flex;
+flex-direction: column;
+align-items:center;/*full name and other labels would stay at center above*/
+gap:1em;
+}
+
+.input-box span{
+  font-size:1.5em;
+}
+form input,textarea{
+  font-size:1.3em;
+  padding:1em 5em;
+  border-radius:0.5em;
+  border:none;
+  outline:none;
+}
+
+form input,textarea:focus{
+  background-color: white;
+}
+.header{
+  font-size: 3em;
+}
+
+.imagegradient{
+   background: linear-gradient(to right,#6cff52 ,rgb(249, 255, 168));
+  background-clip:padding-box;
+  color:transparent;
+  display:inline-block;
+  transition:all 0.2s ease-in;
+}
+.imagegradient:hover{
+    border-radius:1em;
+}
+footer{
+ display:flex;
+flex-direction:row;
+justify-content:center;
+ min-height:20vh;
+ width:100%;
+ padding:3em 3em;
+ align-items: center;
+ gap:2em;
+}
+/*To make it responsive*/
+@media(max-width:968px){
+section{
+  padding:8em 15%;
+
+}
+nav .btn{
+  display:none;
+}
+#menu{
+  display:block;
+}
+.links{
+  position:absolute;
+  top:100%;
+  padding:1em 3em;
+  color:white;
+  left:0;
+  right:0;
+  display:flex;
+  flex-direction:column;
+  background-color: #000000d2;
+  text-align: center;
+  backdrop-filter:30px;
+  display: none;
+}
+.links a{
+  margin:2em;
+  display:block;
+  font-size:1.5em;
+  color:white;
+}
+.links.active{/*stay cautius when to apply : and .*/
+  display:block;
+}
+#home h1{
+  font-size:4em;
+}
+#home h3{
+  font-size:2em;
+}
+#home img{
+  width:24vw;
+}
+#about{
+  flex-direction: column;
+
+}
+#about img{
+  width:32vw;
+}
+#about h1{
+  font-size:3em;
+}
+#about h3{
+  font-size:2em;
+}
+#about ul{
+  font-size:1em;
+}
+}
+@media(max-width:768px){
+#home h1{
+  font-size:2.5em;
+}
+#home h3{
+  font-size:1.5em;
+}
+#home img{
+  width:32vw;
+}
+#about .skills{
+  gap:3em;
+}
+#contact .header{
+  font-size:3em;
+}
+#contact .input-box span{
+  font-size:1.2em;}
+  .input-box input,textarea{
+    padding:0.5em 1em;
+  }
+  footer{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+<link href="https://img.icons8.com/ios-filled/50/github.png" rel="stylesheet"> 
+<link href="https://img.icons8.com/ios-filled/50/twitterx--v1.png" rel="stylesheet">
+<link href="https://img.icons8.com/ios-filled/50/linkedin.png" rel="stylesheet">
+<link href="https://img.icons8.com/ios-filled/50/youtube-play.png" rel="stylesheet">
+
+</head>
+<body>
+<nav>
+  <a href="#" class="logo"><span>PORTFOLIO</span></a>
+
+<!--with the span we are trying to give gardient effect*/-->
+<ul class="links">
+  <a href="#home">Home</a>
+   <a href="#about">About</a>
+    <a href="#Projects">Projects</a>
+     <a href="#Contact">Contact</a>
+</ul>
+<i class='bx  bx-menu-select' id="menu" ></i> 
+<a href="#Connect" class="btn">Connect</a><!--button will direct us to the contact form--></nav>
+
+
+
+<section id="home">
+  <img src="astha.jpg" alt="my image">
+<div class="infobox">
+  <h1><span >Hello,I'm Astha Pathania</span></h1>
+   <h3><span>Welcome to my portfolio</span></h3>
+   <p>Hi, I'm Astha Pathania, a Computer Science and Engineering student with a passion for learning , building and implementing innovative solutions. Welcome to my portfolio, where I showcase my projects and experiences in Web development.</p>
+  
+</div>
+
+<div class="btn-box" >
+  <div class="btn"><a href="CV.pdf" style="color:rgb(78, 67, 67)" download>Download Resume</a></div><!--UNDER WORK FOR JS code t0 add RESUME-->
+  <div style="display:none" class="btn">Contact me</div><!--UNDER WORK FOR JS code t0 add-->
+</div>
+</section>
+
+
+<section id="about">
+  <div class="about-box">
+    <div class="about-info">
+      <h1><span>About me</span></h1>
+      <p>Hi, I'm Astha Pathania, a passionate and driven Computer Science and Engineering student with a keen interest in Web Development and Machine Learning and . I'm fascinated by the way computers work and the power of coding. As I pursue my BTech degree, I'm constantly learning and growing, and I'm excited to apply my skills to real-world projects that make a meaningful impact.</p>
+    </div>
+    <h2><span>Skills</span></h2>
+    <div class="skills">
+      <ul>
+        <li><span>HTML</span></li>
+        <li><span>CSS</span></li><!--span is used to get the gradient effect-->
+          <li><span>BOOTSTRAP</span></li>
+        <li><span>JAVASCRIPT(Actively learning)</span></li>
+      </ul>
+      <ul>
+        <li><span>C++(DSA)</span></li>
+        <li><span></span></li>
+          <li><span>PYTHON</span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+      </ul>
+    </div>
+
+  </div>
+  <img src="astha.jpg">
+</section>
+
+<section id="Projects">
+  <img src="laptop.jpg" alt="my image" style="width: 100%; max-height: 400px; object-fit:cover;">
+
+  <div style="margin:2em auto" class="infobox">
+
+    <h3><span>Projects</span></h3>
+    <p>These are some of my practice projects</p>
+  </div>
+
+
+  <h2 style="margin-top: 40px;">My Projects</h2>
+  <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+    <thead>
+      <tr style="background-color: #848684;">
+        <th >Project Name</th>
+        <th >GitHub Link</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td >Portfolio Website</td>
+        <td ><a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a></td>
+        <td style="padding: 12px; border: 1px solid #ccc;color:white">A responsive personal portfolio website built with HTML, CSS, and JavaScript.</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px; border: 1px solid #ccc; color:white">Youtube interface</td>
+        <td style="padding: 12px; border: 1px solid #ccc;"><a href="https://github.com/yourusername/todo-app" target="_blank">View Code</a></td>
+        <td style="padding: 12px; border: 1px solid #ccc; color:white">A youtube interface amde using html and css</td>
+      </tr>
+    <tr>
+        <td style="padding: 12px; border: 1px solid #ccc; color:white">THE PHOTOWORLD</td>
+        <td style="padding: 12px; border: 1px solid #ccc;"><a href="https://github.com/yourusername/todo-app" target="_blank">View Code</a></td>
+        <td style="padding: 12px; border: 1px solid #ccc; color:white">A photography website interface craeted using html and css(used checkbox for sliding sidebar)</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="Contact">
+  <h1 class="header"><span>Contact:</span></h1>
+  <form action="#">
+    <div class="input-box">
+      <label for="Name"><span>Full Name</span></label>
+      <input id="Name"  type="text" placeholder="Enter your  name" required>
+    </div>
+
+    <div class="input-box">
+      <label for="EmailID" ><span>Email:</span></label>
+      <input id="EmailID" name="EmailID" type="text" placeholder="Enter your  EmailID " required>
+    </div>
+
+    <div class="input-box">
+      <label for="Message" ><span>Message:</span></label>
+      <textarea id="Message" type="text" placeholder="Enter your Message here....." disabled></textarea>
+    </div>
+
+ <button class="btn1">Submit</button>
+  </form>
+</section>
+
+<footer id="Connect" style="background-color: #525252;">
+<div class="Github">
+
+  <a href="https://github.com/AsthaPathania"> <div class="imagegradient"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/></div></a>
+</div>
+
+<div class="twitter">
+  <a href="https://x.com/ASTHA18022004?t=EA2SarilGl7UYMHEUlJNGQ&s=09"> <div class="imagegradient"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" alt="twitterx--v1"/></div></a>
+</div>
+
+<div class="linkdein">
+  <a href="https://www.linkedin.com/in/astha-pathania-520a43294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_apps"> <div class="imagegradient"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin"/></div></a>
+</div>
+<div class="youtube">
+  <a href="https://youtube.com/@yaaratocode?si=J9F8Bm6CdoGamACK"><div class="imagegradient"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/youtube-play.png"alt="youtube-play"/></div></a>
+</div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
